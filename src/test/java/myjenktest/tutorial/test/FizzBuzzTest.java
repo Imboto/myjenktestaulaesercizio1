@@ -22,5 +22,13 @@ public class FizzBuzzTest {
     	//assertEquals (reisultatoOttenuto,risultatoPianificato)- restituisce true o false
     	Assertions.assertEquals(risultato, "1");
     }
+    @DisplayName("Play FizzBuzz with number=3")
+    @Test
+    public void testFizz() {
+    	String risultato=fb.play(3);
+    	Assertions.assertEquals(risultato, "Fizz");
+    }
+    
+    
     
 }
